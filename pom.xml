@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>hello-mule-api</artifactId>
+	<artifactId>helloworld-api</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>hello-mule-api</name>
+	<name>helloworld-api</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.5.2</app.runtime>
+		<app.runtime>4.5.1</app.runtime>
 		<mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
 	</properties>
 
@@ -22,29 +22,13 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.9.5</version>
+				<version>3.2.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-		        <cloudHubDeployment>
-		          <uri>https://anypoint.mulesoft.com</uri>
-		          <muleVersion>4.5.2</muleVersion>
-		          <username>${anypoint.username}</username>
-		          <password>${anypoint.password}</password>
-		          <applicationName>hello-mule-api</applicationName>
-		          <environment>Sandbox</environment>
-		          <workerType>MICRO</workerType>
-		          <workers>1</workers>
-		          <objectStoreV2>true</objectStoreV2>
-		          <properties>
-          			<http.port>8081</http.port>
-          		  </properties>  
-		        </cloudHubDeployment>
-		        </configuration>
 			</plugin>
 		</plugins>
 	</build>
