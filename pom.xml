@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.9.5</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -39,7 +39,7 @@
 		          <environment>Sandbox</environment>
 		          <workerType>MICRO</workerType>
 		          <workers>1</workers>
-
+		          <objectStoreV2>true</objectStoreV2>
 		          <properties>
           			<http.port>8081</http.port>
           		  </properties>  
