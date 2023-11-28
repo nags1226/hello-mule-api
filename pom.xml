@@ -39,7 +39,7 @@
 		          <environment>Sandbox</environment>
 		          <workerType>MICRO</workerType>
 		          <workers>1</workers>
-		          <objectStoreV2>true</objectStoreV2>
+
 		          <properties>
           			<http.port>8081</http.port>
           		  </properties>  
